@@ -9,7 +9,7 @@ const Header = () => {
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
-        navigate("/login");
+        navigate("/");
         // console.log("Signed out successfully");
       })
       .catch((error) => {
