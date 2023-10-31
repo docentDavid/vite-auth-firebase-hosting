@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCvnXv8QR0I3Y8xJtmXWYKTaaTtltjum9E",
+  apiKey: import.meta.env.VITE_apiKey,
   authDomain: "vite-auth-2452d.firebaseapp.com",
   projectId: "vite-auth-2452d",
   storageBucket: "vite-auth-2452d.appspot.com",

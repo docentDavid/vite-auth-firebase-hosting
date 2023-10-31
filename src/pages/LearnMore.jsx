@@ -1,6 +1,20 @@
+import { useEffect } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase.js";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 const LearnMore = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        navigate("/login");
+      }
+    });
+  }, []);
+
   return (
     <>
       <Header />
