@@ -30,7 +30,7 @@ const Default = () => {
             </Link>
           </div>
         </div>
-        <div className="md:w-2/5">
+        <div className="hidden md:inline-block md:2/5">
           <img
             className="object-cover object-center rounded w-80"
             alt="hero"
